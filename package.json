@@ -1,0 +1,29 @@
+{
+  "name": "om.useref",
+  "version": "0.0.0",
+  "description": "npm useref for node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feluxe/om.useref.git"
+  },
+  "keywords": [
+    "useref",
+    "npm",
+    "nodejs"
+  ],
+  "author": "Felix Meyer-Wolters",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/feluxe/om.useref/issues"
+  },
+  "homepage": "https://github.com/feluxe/om.useref#readme",
+  "dependencies": {
+    "clean-css": "^3.4.8",
+    "fs-extra": "^0.26.2",
+    "uglify-js": "^2.6.1"
+  }
+}
