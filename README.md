@@ -1,12 +1,13 @@
 # om.useref
-npm useref for nodejs
+###### npm useref build script for node.js
 
-Concat and Process js/css files that are linked in a HTML file via ```<script>/<link>``` tag.
-Create a new HTML file that links only to the concatenated css/js files.
+Concatenate and uglify/minify js/css files that are linked in a HTML file via `<script>/<link>` tags and save them.
+Create a new HTML file from the source HTML file that links only to the new concatenated css/js files.
 
-Example:
+#### Example:
 
-Source HTML
+###### Source file HTML:
+Define destination path behind `build:`
 ```
 <!-- build:js/app.min.js -->
     <script src="js/plugin1.js"></script>
@@ -20,19 +21,24 @@ Source HTML
 <!-- end build -->
 ```
 
-Output HTML
+###### Destination file HTML:
+`js/app.min.js` and `css/app.min.css` are created from source files.
 ```
 <script src="js/app.min.js"></script>
 <link href="css/app.min.css">
 ```
 
-Call function like that:
+###### Call function like that:
 ```
-var om = require('om.useref');
-om.useref(srcIndexFile, destIndexFile);
+var om = require('om.useref');                      // Load Module.
+
+var srcIndexFile = "app/index.php";                 // Path to source HTML file.
+var destIndexFile = "dist/index.php";               // Path to destination HTML file.
+
+om.useref(srcIndexFile, destIndexFile);             // Execute.
 ```
 
-ES6 Promise integrated:
+###### ES6 Promise integrated:
 ```
 om.useref(srcIndexFile, destIndexFile).then(function(){
     // Do Stuff when useref finished... 
