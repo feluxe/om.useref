@@ -8,7 +8,7 @@ Create a new HTML file from the source HTML file that links only to the new conc
 
 ###### Source file HTML:
 Define destination path behind `build:`
-```
+```HTML
 <!-- build:js/app.min.js -->
     <script src="js/plugin1.js"></script>
     <script src="js/plugin2.js"></script>
@@ -23,13 +23,13 @@ Define destination path behind `build:`
 
 ###### Destination file HTML:
 `js/app.min.js` and `css/app.min.css` are created from source files.
-```
+```HTML
 <script src="js/app.min.js"></script>
 <link href="css/app.min.css">
 ```
 
 ###### Call function like that:
-```
+```javascript
 var om = require('om.useref');                      // Load Module.
 
 var srcIndexFile = "app/index.php";                 // Path to source HTML file.
@@ -39,7 +39,7 @@ om.useref(srcIndexFile, destIndexFile);             // Execute.
 ```
 
 ###### ES6 Promise integrated:
-```
+```javascript
 om.useref(srcIndexFile, destIndexFile).then(function(){
     // Do Stuff when useref finished... 
 }).catch(err){
