@@ -1,7 +1,7 @@
 # om.useref
 npm useref for nodejs
 
-Concat and Process js/css files that are linked in a HTML file via <script>/<link> tag.
+Concat and Process js/css files that are linked in a HTML file via ```<script>/<link>``` tag.
 Create a new HTML file that links only to the concatenated css/js files.
 
 Example HTML:
