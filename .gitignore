@@ -1,2 +1,5 @@
 .idea/
 node_modules/
+.jscsrc
+.jshintrc
+.eslintrc.json
